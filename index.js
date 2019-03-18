@@ -1,6 +1,6 @@
 function dwarfRollCall(dwarves) {
   var str = []
-  for(var i = 0; i < dwarves.length; i++) {
+  for(var i = dwarves.length - 1; i > dwarves.length/2; i--) {
     str.push((i+1) + '. ' + dwarves[i])
   }
   return str.join(' ') + ' '
